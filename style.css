@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -39,6 +40,13 @@ a:hover{
     background-color: #FFFFFF;
     color: #3b929c;   
 
+}
+.icones{
+    
+
+}
+.icones{
+    padding: 10px 50px;
 }
 
 
