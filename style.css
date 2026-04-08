@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+     font-family: "Playwrite IE", cursive;
 }
 
 header{
@@ -17,21 +18,26 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 110px;
+    width: 90%;
+    margin: auto;
 }
 
 ul{
-    width: 40%;
+
     display: flex;
-    justify-content: space-evenly;
     list-style: none;
+    gap: 50px;
+    margin: 50px;
+
 }
 
 a{
     text-decoration: none;
     color: #FFFFFF;
-     font-family: "Playwrite IE", cursive;
-     font-size: 15px;
-     border: 3px solid #FFFFFF;
+     font-size: 25px;
+     border: 2px solid #FFFFFF;
+     padding: 10px;
      border-radius: 0 20px;
 }
 
@@ -41,13 +47,68 @@ a:hover{
     color: #3b929c;   
 
 }
-.icones{
-    
 
-}
 .icones{
     padding: 10px 50px;
 }
+#banner{
+    width: 1400px;
+}
+#banner__image{
+    width: 1400px;
+    margin-top: 10px;
+}
+#reservas{
+    width: 1400px;
+    height: 200px;
+    border: 2px dashed #3b929c;
+    color: #3b929c;
+    text-align: center;
+    font-size: 24px;
+    
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+#reservas__botao{
+    padding: 20px 60px;
+    color: #FFFFFF;
+    font-size: 22px;
+    background-color: #3b929c;
+    border: nome;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+#reserva__titulo{
+    margin-top: 15px;
+
+}
+
+
+.area-sobre{
+    display: flex;
+    width: 140px;
+    margin: 20px auto;
+}
+.sobre{
+    color: #3b929c;
+    width: 500px;
+}
+.sobre__foto{
+    width: 500px;
+}
+.sobre__titulo{
+    font-size: 50px;
+margin-top: 30pix;
+
+}
+.sobre__texto{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
 
 
 
