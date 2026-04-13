@@ -12,6 +12,8 @@ header{
     background-color: #3b929c;
     width: 100%;
     height: 110px;
+    position: fixed;
+    top: 0px;
 }
 
 nav{
@@ -47,17 +49,27 @@ a:hover{
     color: #3b929c;   
 
 }
+a:focus{
+    background-color: #FFFFFF;
+    color: #3b929c;
+}
 
 .icones{
     padding: 10px 50px;
 }
+main{
+    margin-top: 110px;
+}
+
 #banner{
     width: 1400px;
 }
+
 #banner__image{
     width: 1400px;
     margin-top: 10px;
 }
+
 #reservas{
     width: 1400px;
     height: 200px;
@@ -71,7 +83,8 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-} 
+}
+
 #reservas__botao{
     padding: 20px 60px;
     color: #FFFFFF;
@@ -81,11 +94,16 @@ a:hover{
     border-radius: 15px;
     margin-top: 15px;
 }
-#reserva__titulo{
+
+#reservas__botao:hover{
+    background-color: #e78887;
+    color: #FFFFFF;
+}
+
+#reservas__titulo{
     margin-top: 15px;
 
 }
-
 
 .area-sobre{
     display: flex;
@@ -93,18 +111,22 @@ a:hover{
     margin: 20px auto;
     justify-content: space-around;
 }
+
 .sobre{
     color: #3b929c;
     width: 500px;
 }
+
 .sobre__foto{
     width: 500px;
 }
+
 .sobre__titulo{
     font-size: 30px;
 margin-top: 30pix;
 
 }
+
 .sobre__texto{
     margin-top: 30px;
     font-size: 30px;
@@ -121,7 +143,6 @@ margin-top: 30pix;
     font-size: px;
     color: #3b929c;
     margin-bottom: 50px;
-
 }
 
 .busca{
