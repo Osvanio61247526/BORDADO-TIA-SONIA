@@ -118,7 +118,7 @@ margin-top: 30pix;
 }
 
 .catalogo-titulo{
-    font-size: 50px;
+    font-size: px;
     color: #3b929c;
     margin-bottom: 50px;
 
@@ -148,10 +148,9 @@ margin-top: 30pix;
     color: #3b929c;
     margin-top: -10px;   
 }
-.bordados > a > img{
-
-}
-.bordados{
+.bordado > a > img{
+    width: 400px;
+    border-radius: 10PX ;
     text-align: center;
 
 }
@@ -161,8 +160,9 @@ margin-top: 30pix;
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    
+
 }
+
 
 
 
