@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
 
 :root{
-    --verde-principal:#3b929c;
-    --branco-secundario:#ffffff;
-    --rosa-salmao: #e78887;
+    --cor-principal:#3b929c;
+    --cor-secundaria:#ffffff;
+    --cor-botao: #e78887;
 }
+
 
 *{
     margin: 0;
@@ -21,7 +22,7 @@
 }
 
 header{
-    background-color: var(--verde-principal);
+    background-color: var(--cor-principal);
     width: 100%;
     height: 110px;
     position: fixed;
@@ -48,22 +49,22 @@ ul{
 
 a{
     text-decoration: none;
-    color: var(--branco-secundario);
+    color: var(-cor-secundaria);
      font-size: 25px;
-     border: 2px solid var(--branco-secundario);
+     border: 2px solid var(-cor-secundaria);
      padding: 10px;
      border-radius: 0 20px;
 }
 
 
 a:hover{
-    background-color: var(--branco-secundario);
-    color: var(--verde-principal);   
+    background-color: var(-cor-secundaria);
+    color: var(--cor-principal);   
 
 }
 a:focus{
-    background-color: var(--branco-secundario);
-    color: var(--verde-principal);
+    background-color: var(-cor-secundaria);
+    color: var(--cor-principal);
 }
 
 .icones{
@@ -85,8 +86,8 @@ main{
 #reservas{
     width: 1400px;
     height: 200px;
-    border: 2px dashed var(--verde-principal);
-    color: var(--verde-principal);
+    border: 2px dashed var(--cor-principal);
+    color: var(--cor-principal);
     text-align: center;
     font-size: 24px;
     
@@ -99,17 +100,17 @@ main{
 
 #reservas__botao{
     padding: 20px 60px;
-    color: var(--branco-secundario);
+    color: var(-cor-secundaria);
     font-size: 22px;
-    background-color: var(--verde-principal);
+    background-color: var(--cor-principal);
     border: nome;
     border-radius: 15px;
     margin-top: 15px;
 }
 
 #reservas__botao:hover{
-    background-color: var(--rosa-salmao);
-    color: var(--branco-secundario);
+    background-color: var(--cor-botao);
+    color: var(-cor-secundaria);
 }
 
 #reservas__titulo{
@@ -125,7 +126,7 @@ main{
 }
 
 .sobre{
-    color: var(--verde-principal);
+    color: var(--cor-principal);
     width: 500px;
 }
 
@@ -153,14 +154,14 @@ margin-top: 30pix;
 
 .catalogo-titulo{
     font-size: px;
-    color: var(--verde-principal);
+    color: var(--cor-principal);
     margin-bottom: 50px;
 }
 
 .busca{
     width: 764px;
     height: 40px;
-    border: 5px solid var(--verde-principal);
+    border: 5px solid var(--cor-principal);
     border-radius: 20px;
     padding: 5px;
     display: flex;
@@ -178,7 +179,7 @@ margin-top: 30pix;
     font-size: 30px;
     border:none;
     background: none;
-    color: var(--verde-principal);
+    color: var(--cor-principal);
     margin-top: -10px;   
 }
 .bordado > a > img{
