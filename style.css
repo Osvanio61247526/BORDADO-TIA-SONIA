@@ -284,10 +284,26 @@ header{
     }
     .sobre__foto{
         width: 400px;
-        border-radius: 150px;
+        border-radius: 100px;
         
     }
-
+    hr{
+        width: 400px;
+    }
+    .area__busca{
+        width: var(--largura-celular);
+    }
+    .busca{
+        width: 300px;
+    }
+    .catalogo-titulo{
+        font-size: 35px;
+    }
+    
+.catalogo{
+    width: var(--largura-celular)git
+    
+}
 
     }
     
