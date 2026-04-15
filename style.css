@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
 
 :root{
-    --cor-principal:#ad2947;  /*#3b929c */
-    --cor-secundaria:#99aa5a; /*#ffffff*/
-    --cor-botao: #d3d9db; /*#e78887*/
+    --cor-principal:#6049F2;  /*#3b929c */
+    --cor-secundaria:#99AAF2; /*#ffffff*/
+    --cor-botao:#9749F2 ; /*#e78887*/
     --largura-principal:1600px;
+    --largura-celular:430px;
 }
 
 
@@ -30,7 +31,7 @@ header{
     top: 0px;
 }
 
-nav{
+.area-navegacao{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -144,7 +145,7 @@ margin-top: 30pix;
 .sobre__texto{
     margin-top: 30px;
     font-size: 30px;
-    color: purple
+    color:#000000
 }
 
 .area-busca{
@@ -202,8 +203,65 @@ margin-top: 30pix;
     
 }
 h1{color: royalblue;}
-h2{color: black;}
+h2{color: #DB3AF3;}
 h3{color: blue;}
+
+
+
+
+
+
+@media(max-width: 430px) {
+
+header{
+    width: var(--largura-celular)
+    height: 90;
+    position: fixed;
+    top: 0;
+
+}
+    .area-navegacao{
+        width: var(--largura-celular)
+        height: 90px;
+        display: block;
+        justify-content: center;
+
+    }
+    .logo{
+        display: none;
+    }
+     
+    ul{
+        gap: 0;
+    }
+    .icones{
+        font-size: 20px;
+        border: none;
+        padding: 15px;
+    }
+    .icones:hover, .icones:focus{
+        background-color: none;
+        color: none;
+    }
+    #banner{
+        width: var(--largura-celular)
+
+    }
+    #banner-image{
+        width: var(--largura-celular);
+        
+    }
+    #reservas{
+        width: 390px;
+        border-width: 2px;
+    }
+    #reservas__titulo{
+        font-size: 22px;
+    }
+
+    }
+    
+
 
 
 
