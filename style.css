@@ -269,18 +269,23 @@ header{
     }
     .sobre{
         width: var(--largura-celular);
+        display: flex;
+         flex-direction: column;
+         align-content: center;
+         
     }
     .sobre__titulo{
         font-size: 35px;
-        text-align: center;
+        
     }
     .sobre__texto{
         font-size: 20px;
         padding: 30px;
     }
     .sobre__foto{
-        width: var(--largura-celular);
+        width: 400px;
         border-radius: 150px;
+        
     }
 
 
