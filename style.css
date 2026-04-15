@@ -214,14 +214,14 @@ h3{color: blue;}
 @media(max-width: 430px ) {
 
 header{
-    width: var(--largura-celular)
-    height: 90;
+    width: var(--largura-celular);
+    height: 90px;
     position: fixed;
     top: 0;
 
 }
     .area-navegacao{
-        width: var(--largura-celular)
+        width: var(--largura-celular);
         height: 90px;
         display: block;
         justify-content: center;
@@ -232,7 +232,7 @@ header{
     }
      
     ul{
-        gap: 30px;px;
+        gap: 30px;
     }
     .icones{
         font-size: 20px;
@@ -244,20 +244,45 @@ header{
         color: none;
     }
     #banner{
-        width: var(--largura-celular)
+        width: var(--largura-celular);
 
     }
-    #banner-image{
+    #banner__image{
         width: var(--largura-celular);
         
     }
     #reservas{
-        width: 390px;
+        width: 360px;
         border-width: 2px;
     }
     #reservas__titulo{
         font-size: 22px;
     }
+    #reservas__botao{
+        padding: 10px 15px;
+        font-size: 10px;
+        border-radius: 8px;
+    }
+    .area-sobre{
+        flex-direction: column;
+
+    }
+    .sobre{
+        width: var(--largura-celular);
+    }
+    .sobre__titulo{
+        font-size: 35px;
+        text-align: center;
+    }
+    .sobre__texto{
+        font-size: 20px;
+        padding: 30px;
+    }
+    .sobre__foto{
+        width: var(--largura-celular);
+        border-radius: 150px;
+    }
+
 
     }
     
