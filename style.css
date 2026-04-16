@@ -5,8 +5,8 @@
     --cor-principal:#6049F2;  /*#3b929c */
     --cor-secundaria:#99AAF2; /*#ffffff*/
     --cor-botao:#9749F2 ; /*#e78887*/
-    --largura-principal:1600px;
-    --largura-celular:430px;
+    --largura-principal:84vw;
+    --largura-celular:100vw;
 }
 
 
@@ -36,7 +36,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 110px;
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 
@@ -214,13 +214,13 @@ h3{color: blue;}
 @media(max-width: 430px ) {
 header{
     width: var(--largura-celular);
-    height: 90px;
+    height: 10vh;
     position: fixed;
     top: 0;
 }
     .area-navegacao{
         width: var(--largura-celular);
-        height: 90px;
+        height: 10vh;
         display: block;
         justify-content: center;
     }
@@ -291,12 +291,12 @@ header{
     }
 
     .sobre__foto{
-        width: 400px;
-        border-radius: 100px; 
+        width: 200px;
+        border-radius: 90px; 
     }
 
     hr{
-        width: 400px;
+        width:0px;
     }
 
     .area__busca{
@@ -307,13 +307,15 @@ header{
         width: 350px;
     }
 
-    .catalogo-titulo{
+ .catalogo-titulo{
         font-size: 35px;
     }
 
 .catalogo{
     width: var(--largura-celular);
-    gap: 0px;   
+    align-content: space-evenly;
+    height: 65vh;
+    gap: 05px;
 }
     
 body{
@@ -322,8 +324,6 @@ body{
 
 .bordado > a > img{
     width: 200px;
-    border-radius: 10PX ;
-    text-align: center;
 }
 
 
