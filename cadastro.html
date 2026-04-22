@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro</title>
 </head>
+
 <body>
     <main>
         <section>
@@ -21,16 +23,70 @@
                         <label for="sobrenome">sobrenome</label>
                         <input type="text" id="sobrenome" placeholder="digite seu sobrenomegit">
                     </div>
-                    <div>
-                    <button type="submit"> cadastro</button>
-                        
-                    
+                    <div class="area-acesso">
+                        <div class="amail">
+                            <label for="email">amail</label>
+                            <input type="email" id="email" placeholder="digite seu email" required>
+                        </div>
+                        <div class="senha">
+                            <label for="senha">senha</label>
+                            <input type="password" id="senha" placeholder="●●●●●●●●" required>
+                        </div>
                     </div>
-                
-                </div>
+                    <div class="area-contato">
+                        <div class="ddd">
+                            <label for="ddd">ddd</label>
+                            <input type="number" max="99" id="ddd" placeholder="ddd" required>
+                        </div>
+                        <div class="telefone">
+                            <label for="telefone">telefone</label>
+                            <input type="text" id="telefone" placeholder="digite seu telefone" required>
+                        </div>
+                        <div class="area-endereco">
+                            <div class="endereco">
+                                <label for="endereco"></label>
+                                <input type="text" id="endereco" placeholder="digite seu endereco">
+                            </div>
+                            <div class="numero">
+                                <label for="numero">número</label>
+                                <input type="number" id="numero" placeholder="000">
+                            </div>
+                            <div class="cidade">
+                                <label for="cidade">cidade</label>
+                                <input type="text" id="cidade" placeholder="cidade">
+                            </div>
+                            <div class="cep">
+                                <label for="cep">cep</label>
+                                <input type="text" id="cep" placeholder="00000-000">
+                            </div>
+                        </div>
+                        <div class="area-dados">
+                            <div class="data-nacimento">
+                                <label for="data-nacimento">data de nacimento</label>
+                                <input type="date" id="data-nacimento" required>
+
+                            </div>
+                            <div class="genero">
+                                <label for="genero">genero</label>
+                                <select id="genero" required>
+                                    <option value="#" disabled selected>selecione seu gênero</option>
+                                    <option value="#">feminino</option>
+                                    <option value="#">masculino</option>
+                                    <option value="#">outros</option>
+                                    <option value="#">prefiro não responder</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="area botao">
+                            <button type="submit" id="botao cadastrar"> cadastrar</button>
+                            <a href="#" class="link-login"> já possui uma conta? Acesse</a>
+                        </div>
+
             </form>
         </section>
     </main>
-    
+
 </body>
+
 </html>
