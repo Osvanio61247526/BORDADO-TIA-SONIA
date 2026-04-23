@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
 
 :root{
-    --cor-principal:#6049F2;  /*#3b929c */
+    --cor-principal:#6049f2a6;  /*#3b929c */
     --cor-secundaria:#99AAF2; /*#ffffff*/
-    --cor-botao:#9749F2 ; /*#e78887*/
+    --cor-botao:hsl(120, 87%, 62%) ; /*#e78887*/
     --largura-principal:84vw;
     --largura-celular:100vw;
 }
