@@ -25,32 +25,55 @@
 
 .form-cadastro > div{
     display: flex;
-    gap: 40px;
+    gap: 30px;
     width: 50vw;
 }
 .ddd input{
-    width: 40px;
-}
-.area-endereco{
-    display: flex;
-     flex-direction: column;
-    width: 60vw;   
-}
-#endereco{
-    width: 30vw;
-
-}
-.endereco-numero{
-    display: flex;
-}
-.cidade-cep{
-    display: flex;
     width: 4vw;
 }
+
 #numero{
     width: 4vw;
 }
 .formatacao div{
     display: flex;
     flex-direction: column;
+    flex: 1;
+}
+#ddd, #numero{
+    width: 4vw;
+}
+#telefone{
+      width: 6vw;
+}
+
+
+#cep{ 
+    width: 4vw;
+}
+#senha{
+    width: 10vw;
+}
+input, select{
+    width: 100%;
+    padding: 10px 0;
+}
+.area-botao{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#botao-cadastrar{
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    
+}
+.link-login{
+    margin-top: -25px;
+
 }
