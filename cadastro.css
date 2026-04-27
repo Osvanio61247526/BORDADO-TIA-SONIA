@@ -16,6 +16,8 @@
     flex-direction: column;
     align-items:center;
     gap: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
 }
 .area-formulario{
     display: flex;
@@ -23,46 +25,32 @@
     width: 60vw;
 }
 
-.form-cadastro > div{
+.area-formulario> div{
     display: flex;
-    gap: 30px;
-    width: 50vw;
-}
-.ddd input{
-    width: 4vw;
+    gap: 50px;
 }
 
-#numero{
-    width: 4vw;
-}
-.formatacao div{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-#ddd, #numero{
-    width: 4vw;
-}
-#telefone{
-      width: 6vw;
-}
-
-
-#cep{ 
-    width: 4vw;
-}
-#senha{
-    width: 10vw;
-}
-input, select{
+div{
     width: 100%;
-    padding: 10px 0;
+   display: flex;
 }
+
+.area-endereco{
+    display: block;
+}
+
+input, select{
+    padding:7px 0;
+    margin-bottom: 8px;
+
+}
+
 .area-botao{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 
 }
 #botao-cadastrar{
@@ -70,10 +58,59 @@ input, select{
     padding: 10px;
     border: none;
     border-radius: 5px;
-    font-size: 1.1rem;
-    
+    font-size: 1.1rem;   
 }
-.link-login{
-    margin-top: -25px;
+.titulo-campo{
+    display: flex;
+    flex-direction: column;
+}
+.formatacao{
+    gap: 1rem;
+}
+form{
+    width: 50vw;
 
 }
+.ddd, .numero{
+    width: 100px;
+}
+.telefone{
+    width: 300px;
+}
+ .cep{
+    width: 150px;
+}
+.data-nacimento{
+    width: 300px;
+}
+
+input,select{
+    border-radius: 7px;
+    padding: 10px;
+    border: none;
+    font-size: 1.1em; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
