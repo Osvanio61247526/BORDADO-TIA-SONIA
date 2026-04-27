@@ -10,7 +10,7 @@
 
 .area-cadastro{
     background-color: var(--cor-botao);
-    margin: 50px auto;
+    margin: 150px auto;
     width: 60vw;
     display: flex;
     flex-direction: column;
@@ -90,6 +90,49 @@ input,select{
     border: none;
     font-size: 1.1em; 
 }
+
+
+@media (max-width: 430px){
+ 
+    .area-cadastro{
+        width: 100px;
+        background: none;
+        color: var(--cor-secundaria)
+    }
+    form{
+        width: 85vw;
+
+    }
+    .formatacao{
+        flex-direction: column;
+    }
+    .area-contato, .endereco-numero, .cidada-cep{
+        flex-direction: row;
+    }
+    input, select{
+        border:2px solid var(--cor-secundaria) ;
+
+    }
+    .cep{
+        width:40vw ;
+    }
+    #botao-cadastrar{
+        background-color: var(--cor-botao);
+        color: var(--cor-secundaria);
+
+    }
+    .link-login{
+        color: var(--cor-principal);
+
+    }
+
+
+
+
+}
+
+
+
 
 
 
