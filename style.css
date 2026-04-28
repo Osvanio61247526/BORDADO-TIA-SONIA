@@ -15,10 +15,12 @@
     padding: 0;
      font-family: "Playwrite IE", cursive;
 }
+
 #home{
     scroll-margin-top: 110px;
 
 }
+
 #bordados{
     scroll-margin-top: 140px;
 }
@@ -72,6 +74,7 @@ ul{
 .icones{
     padding: 10px 50px;
 }
+
 main{
     margin-top: 110px;
 }
@@ -94,6 +97,7 @@ main{
     font-size: 24px;
     
 }
+
 .area-banner{
     display: flex;
     flex-direction: column;
@@ -187,12 +191,14 @@ margin-top: 30pix;
     color: var(--cor-principal);
     margin-top: -10px;   
 }
+
 .bordado > a > img{
-    width: 350px;
+    width: 600px;
     border-radius: 10PX ;
     text-align: center;
 
 }
+
 .catalogo{
     margin: 100px auto;
     width: var(--largura-principal);
@@ -202,12 +208,27 @@ margin-top: 30pix;
     gap: 50px;
     
 }
+
 h1{color: royalblue;}
 h2{color: #DB3AF3;}
 h3{color: blue;}
 
 
+.rodape{
+    width:100vw;
+    height: 10vh;
+    background-color: var(--cor-principal);
+    color: #DB3AF3
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.nav-rodape p{
+    margin: 10px;
+    font-size: 1.2rem;
 
+}
 
 
 
@@ -218,6 +239,7 @@ header{
     position: fixed;
     top: 0;
 }
+
     .area-navegacao{
         width: var(--largura-celular);
         height: 10vh;

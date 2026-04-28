@@ -6,11 +6,11 @@
     padding: 0;
 
 }
+
  .senha{
-    width: 400px;
+    width: 300px;
  }
 
- 
 .area-cadastro{
     background-color: var(--cor-botao);
     margin: 150px auto;
@@ -22,6 +22,7 @@
     box-sizing: border-box;
     border-radius: 20px;
 }
+
 .area-formulario{
     display: flex;
     justify-content: center;
@@ -56,6 +57,7 @@ input, select{
     gap: 10px;
 
 }
+
 #botao-cadastrar{
     width: 25%;
     padding: 10px;
@@ -63,17 +65,21 @@ input, select{
     border-radius: 5px;
     font-size: 1.1rem;   
 }
+
 .titulo-campo{
     display: flex;
     flex-direction: column;
 }
+
 .formatacao{
 flex-direction: column;
 }
+
 form{
     width: 50vw;
 
 }
+
 .ddd, .numero{
     width: 100px;
 }
@@ -97,23 +103,25 @@ input,select{
         background: none;
         color: var(--cor-secundaria)
     }
+    
     .area-formulario {
         width: 100vw;
     }
-
-    
+   
     form{
         width: 85vw;
 
     }
+
     .formatacao{
         flex-direction: column;
     }
+
     .area-contato, .endereco-numero, .cidada-cep{
         flex-direction: row;
-
     
     }
+
     input, select{
         border:2px solid var(--cor-secundaria) ;
     }
@@ -121,17 +129,18 @@ input,select{
     .endereco, .telefone{
         width: 60vw;
     }
+
     .cep{
         width:40vw ;
     }
+
     #botao-cadastrar{
         background-color: var(--cor-botao);
         color: var(--cor-secundaria);
-
     }
+
     .link-login{
         color: var(--cor-principal);
-
     }
 
 
