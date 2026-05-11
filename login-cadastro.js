@@ -1,8 +1,8 @@
-const FORM_CADASTRO = document .getElementById( "form-cadastrar")
+const FORM_CADASTRO = document .getElementById( "form-cadastrar");
 
 if( FORM_CADASTRAR) {
     FORM_CADASTRAR.addEventListener("submit", function( event) {
-        event.preventDefault()
+        event.preventDefault();
         const usuario ={ 
             nome:document.getElementById("nome").value,
             sobrenome : document. getElementById( "sobrenome").value, 
@@ -18,42 +18,43 @@ if( FORM_CADASTRAR) {
             genero: document.getElementById("genero").selectedOptions[ 0].text
 
 
-        }
-        localStorage.setItem( "usuarioCadastrado",JSON.stringify( usuario))
-        alert("cadastro realizado com SUCESSO!")
+        };
+        localStorage.setItem( "usuarioCadastrado",JSON.stringify( usuario));
+        alert("cadastro realizado com SUCESSO!");
         Window.location.href="login.html"
 
-    })
+    });
 }
+
+
 //parte de login
 
-const FORM_LOGAR = document.getElementById("orm-logar")
+const FORM_LOGAR = document.getElementById("form-logar");
 
 if( FORM_LOGAR){ 
     FORM_LOGAR.addEventListener("submit", function( event){
-    event .preventDefault()
+    event .preventDefault();
 
-    const suarioCadastrado =localStorage.getItem("usuarioCadastrado")
+    const suarioCadastrado =localStorage.getItem("usuarioCadastrado");
 
     if(usuariocadastrado){
-        const usuarioEncontrado = JSON.parse( usuarioCadastrado) 
+        const usuarioEncontrado = JSON.parse( usuarioCadastrado); 
 
-        var emailDigitado =document.getElementById (  "email" ).value
-        var senhaDigitada =document.getElementById ("senha").value
+        var emailDigitado =document.getElementById (  "email" ).value;
+        var senhaDigitada =document.getElementById ("senha").value;
 
-        if( emailDigitado ==usuarioEncontrado.email && senhaDigitada == usuarioEncontrado. senha){ 
-            alert("usuário logado com sucesso!")
-            window.location.href = "index.html"
+        if( emailDigitado ==usuarioEncontrado.email && senhaDigitada == usuarioEncontrado.senha){ 
+            alert("usuário logado com sucesso!");
+            window.location.href = "index.html";
         }else {
-            alert( "ATENCAO : email ou senha incorretos")
+          Window .alert( "ATENCÃO : email ou senha incorretos");
         }
                  
     }else{
-        alert( "nenhum usuario cadastrado rncontrado")
+      Window .alert( "nenhum usuário cadastrado encontrado");
     }
 
-
-
-})
+    
+});
 
 }
