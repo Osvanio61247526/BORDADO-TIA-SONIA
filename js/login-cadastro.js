@@ -40,8 +40,8 @@ if( FORM_LOGAR){
     if(usuariocadastrado){
         const usuarioEncontrado = JSON.parse( usuarioCadastrado); 
 
-        var emailDigitado =document.getElementById (  "email" ).value;
-        var senhaDigitada =document.getElementById ("senha").value;
+        var emailDigitado = document.getElementById (  "email" ).value;
+        var senhaDigitada = document.getElementById ("senha").value;
 
         if( emailDigitado ==usuarioEncontrado.email && senhaDigitada == usuarioEncontrado.senha){ 
             alert("usuário logado com sucesso!");

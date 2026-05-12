@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
 
 :root{
-    --cor-principal:#6049f2a6;  /*#3b929c */
+    --cor-principal:#49f28ff8;  /*#3b929c */
     --cor-secundaria:#99AAF2; /*#ffffff*/
     --cor-botao:hsl(120, 87%, 62%) ; /*#e78887*/
     --largura-principal:84vw;
@@ -196,7 +196,10 @@ margin-top: 30pix;
     width: 600px;
     border-radius: 10PX ;
     text-align: center;
+}
 
+.acesso-negado{
+    background-color: red;
 }
 
 .catalogo{
@@ -205,13 +208,12 @@ margin-top: 30pix;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
-    gap: 50px;
-    
+    gap: 50px;   
 }
 
-h1{color: royalblue;}
+h1{color: rgba(68, 65, 225, 0.61);}
 h2{color: #DB3AF3;}
-h3{color: blue;}
+h3{color: rgba(0, 38, 255, 0.979);}
 
 
 .rodape{
