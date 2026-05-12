@@ -10,7 +10,7 @@ const senhaUsuario2 = "123456"
 let nomeDigitado = prompt("Digite seu email")
 let senhaDigitado = prompt ("Digite sua senha")
 
-//Verificação de login
+//Verificação de login,
 if(nomeDigitado === nomeUsuario1 && senhaDigitada === senhaUsuario1)
  { 
     alert("Login bem-sucedido! Bem vindo," + nomeUsuario1 + "!")
