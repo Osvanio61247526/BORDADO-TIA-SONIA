@@ -9,7 +9,7 @@
 }
 
 .area-cadastro{
-    background-color: red;
+    background-color: rgb(212, 212, 212);
     margin: 150px auto;
     width: 60vw;
     display: flex;
@@ -88,6 +88,15 @@ input,select{
     border: none;
     font-size: 1.1em; 
 }
+.erro-input{
+    border: 2px solid #ff4444 !important;
+    background-color: #ffe6e6;
+}
+.sucesso-input{
+    border: 2px solid #00cc66 ! important;
+}
+
+
 
 
 
@@ -136,7 +145,6 @@ input,select{
     .link-login{
         color: var(--cor-principal);
     }
-
 
 
 }

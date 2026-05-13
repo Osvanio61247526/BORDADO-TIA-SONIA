@@ -220,7 +220,7 @@ h3{color: rgba(0, 38, 255, 0.979);}
     width:100vw;
     height: 10vh;
     background-color: var(--cor-principal);
-    color: #DB3AF3
+    color: #DB3AF3;
     display: flex;
     justify-content: center;
     align-items: center;
