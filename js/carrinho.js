@@ -5,7 +5,7 @@ let carrinho = JSON.parse(localStorage.getItem( 'itemCarrinho'))
 || []
 
 //funcao para adicionar itens ao carrinho
-botoesAdicionar.forEach(function(botao){
+botoesAdicionar.forEach(function(botao) {
     botao.addeventListener('click', function(){
 
     //recebe dados do botao

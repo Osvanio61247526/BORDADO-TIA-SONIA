@@ -1,5 +1,5 @@
 //vamos verificar se o usuário está logado
-const usuarioLogado = localStorage.getItem('usuarioCadastrado')
+const usuarioLogado = localStorage.getItem('usuarioCadastro')
 
 // se não estiver logado é direcionado para a página de login
 
