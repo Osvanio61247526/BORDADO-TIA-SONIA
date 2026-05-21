@@ -1,17 +1,17 @@
 //vamos verificar se o usuário está logado
-const usuarioLogar = localStorage.getItem('usuarioCadastrado')
+const usuarioLogado = localStorage.getItem('usuarioCadastrado')
 
 // se não estiver logado é direcionado para a página de login
 
-if (!usuarioLogar) {
-    document.innrHTML =
+if (!usuarioLogado) {
+    document.innerHTML =
         '<div class ="conteiner text-center mt-5">'
     '<h2 class="text-danger"><i class="fa-solid fa-lock"></i>acesso negado</h2>' +
         '<p class="mb-4"> voce precisa estar logado.</p>' +
         '<p calss="text-muted">aguarde...</p>' +
         '</div>'
     setTimeout(() => {
-        Window.location.href = 'login.html'
+        window.location.href = 'login.html'
     }, 2500)
 
 } else {
@@ -19,7 +19,6 @@ if (!usuarioLogar) {
     const carrinho = JSON.parse(localStorage.getItem('itemCarrinho')) || []
     const listaProdutosHTML = document.getElementById('lista-produtos')
     const textoTotal = adocument.getElementById('texto-total')
-    
     let valorTotal = 0
     let textoPedidoPronto = ' olá, gostaria de fazer um pedido:\n\n'
 
@@ -27,7 +26,7 @@ if (!usuarioLogar) {
     if (carrinho.length === 0) {
         listaProdutosHTML.innerHTML =
             '<tr>' +
-            '<td colspan="2" class="text-center"> seu carrinhio está vazio</td>' +
+              '<td colspan="2" class="text-center"> seu carrinhio está vazio</td>' +
             '</tr>'
     } else {
 
@@ -35,8 +34,8 @@ if (!usuarioLogar) {
         carrinho.forEach(function(item){
             listaProdutosHTML.innerHTML +=
                 '<tr>' +
-                '<td>' + item.nome + '</td>'+
-                '<td>R$ ' + item.preco +' </td>' +
+                   '<td>' + item.nome + '</td>'+
+                   '<td>R$ ' + item.preco + ' </td>' +
                 '</tr>'
         //somar o total
         valorTotal += parseFloat(item.preco)
@@ -44,7 +43,7 @@ if (!usuarioLogar) {
         textoPedidoPorEmail += '-' +  item.nome + ': R$ ' + item.preco + '\n'
     })
 
-        textoTotal.innerText = 'Total: R$' + valorTotal
+        textoTotal.innerText = 'Total: R$ ' + valorTotal
         textoPedidoProntoPorEmail += '\nValor Total: R$ ' + valorTotal
 
     }
