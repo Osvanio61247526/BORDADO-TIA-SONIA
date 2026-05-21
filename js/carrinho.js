@@ -5,12 +5,12 @@ let carrinho = JSON.parse(localStorage.getItem( 'itemCarrinho'))
 || []
 
 //funcao para adicionar itens ao carrinho
-botoesAdicionar.forEach(function(botao) {
-    botao.addeventListener('click', function(){
+botoesBordados.forEach(function(botao) {
+    botao.addEventListener('click', function(){
 
     //recebe dados do botao
     const nomeProduto = botao.getAttribute('data-nome')
-    const procoProduto = botao.getAttribute('data-preco')
+    const precoProduto = botao.getAttribute('data-preco')
 
     // cira um objeto para o item do carrinhio
     const itemCarrinho = {
@@ -18,19 +18,19 @@ botoesAdicionar.forEach(function(botao) {
         preco:precoProduto
     }
     // adicionar o item ao carrinho
-    carrinho.push( itemcarrinho)
+    carrinho.push(itemCarrinho)
 
     //salva o carrinho no localstorade
     localStorage.setItem("itemCarrinho", JSON.stringify(carrinho))
 
     // exibe uma mensagem de confirmacao
 
-    botao.innertext = 'adicionar!'
-    botao.classList.replace('btn-primary', 'btn success')
+    botao.innerText = 'adicionar!'
+    botao.classList.replace('btn-primary','btn-success')
 
     // depois de um tempo a mensagem some
     setTimeout(() => {
-        botao. ennerText = 'adicionado!'
+        botao.innerText = 'adicionado!'
         botao.classList.replace('btn-success','btn-primary')}, 2000)
     })
     
