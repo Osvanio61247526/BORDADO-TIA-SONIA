@@ -18,7 +18,7 @@ if (!usuarioLogado) {
     //reunindo as informacões do usuário logado
     const carrinho = JSON.parse(localStorage.getItem('itemCarrinho')) || []
     const listaProdutosHTML = document.getElementById('lista-produtos')
-    const textoTotal = adocument.getElementById('texto-total')
+    const textoTotal = document.getElementById('texto-total')
     let valorTotal = 0
     let textoPedidoPronto = ' olá, gostaria de fazer um pedido:\n\n'
 
@@ -40,12 +40,11 @@ if (!usuarioLogado) {
         //somar o total
         valorTotal += parseFloat(item.preco)
         // colocar os itens no e-mail
-        textoPedidoPorEmail += '-' +  item.nome + ': R$ ' + item.preco + '\n'
+        textoPedidoPronto += '-' +  item.nome + ': R$ ' + item.preco + '\n'
     })
 
         textoTotal.innerText = 'Total: R$ ' + valorTotal
-        textoPedidoProntoPorEmail += '\nValor Total: R$ ' + valorTotal
-
+        textoPedidoPronto += '\nValor Total: R$ ' + valorTotal
     }
 }
 
