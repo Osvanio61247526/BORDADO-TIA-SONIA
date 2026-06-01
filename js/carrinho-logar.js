@@ -35,12 +35,12 @@ if (!usuarioLogado) {
             listaProdutosHTML.innerHTML +=
                 '<tr>' +
                    '<td>' + item.nome + '</td>'+
-                   '<td>R$ ' + item.preco + ' </td>' +
+                   '<td>R$' + item.preco + '</td>' +
                 '</tr>'
         //somar o total
         valorTotal += parseFloat(item.preco)
         // colocar os itens no e-mail
-        textoPedidoPronto += '-' +  item.nome + ': R$ ' + item.preco + '\n'
+        textoPedidoPronto += '-' + item.nome + ': R$' + item.preco + '\n'
     })
 
         textoTotal.innerText = 'Total: R$ ' + valorTotal
