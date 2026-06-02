@@ -1,3 +1,5 @@
+const { Suspense } = require("react")
+
 //vamos verificar se o usuário está logado
 const usuarioLogado = localStorage.getItem('usuarioCadastro')
 
@@ -45,7 +47,51 @@ if (!usuarioLogado) {
 
         textoTotal.innerText = 'Total: R$ ' + valorTotal
         textoPedidoPronto += '\nValor Total: R$ ' + valorTotal
+    
+    //finalizar o pedido por e-meil
+    const btnFinalizar = document.getElementById('btn-finalizar')
+    btnFinalizar.addEventListener('click', function(){
+        Event.preventDefault()
+
+        if(carrinho.length === 0){
+            const textOriginal = btnFinalizar.innerText
+            btnFinalizar.innerText = "o carrinho está vazio!"
+            btnFinalizar.classList.replace("btn-success", "btn-danger")
+
+            setTimeout(() =>{
+                 btnFinalizar.inneText = textOriginal
+                 btnFinalizar.classList.replace('btn-danger', 'btn-success')
+            },2500)
+
+        
+
+        return
     }
+        btnFinalizar.innerText = 'preprando pedido...!'
+         btnFinalizar.classList.replace( 'bnt-success', 'btn-secondary')
+
+         const cliente = JSON.parse( usuarioLogado)
+         textoPedidoProntoEmail += '\n\nDados do cliente:\nNome:' + cliente.nome + '\nE-mail:' + cliente.telefone
+
+         const emailTiasonia = 'osvanio61247526@edu.df.senac.br'
+         const assunto = 'novo pedido de'+ SVGLinearGradientElement.nome
+
+           const linkEmail = 'https://mail.google.com/mail/?
+           view=cm&fs=1&to=${emailTiaSonia}&su=${encodeURIComponent(assunto)}&body=${encodeURIComponent(textoPedidoPorEmail)}'
+
+           window.open(linkGmail,' blank')
+
+           localStorage.removeItem( 'itemCarrinho')
+
+           setTimeout(()=> {
+             window.location.href = 'index.html'
+           }, 1500)
+
+           })
+            
+           }
+
+    
 }
 
 
