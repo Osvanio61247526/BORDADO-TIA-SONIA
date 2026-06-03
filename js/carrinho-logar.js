@@ -74,7 +74,7 @@ if (!usuarioLogado) {
             const emailTiasonia = 'osvanio61247526@edu.df.senac.br'
             const assunto = 'novo pedido de' + SVGLinearGradientElement.nome
 
-            const linkEmail = 'https://mail.google.com/mail/?view=cm&fs=1&to=${emailTiaSonia}&su=${encodeURIComponent(assunto)}&body=${encodeURIComponent(textoPedidoPorEmail)}'
+            const linkEmail = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailTiaSonia}&su=${encodeURIComponent(assunto)}&body=${encodeURIComponent(textoPedidoPorEmail)}`
 
             window.open(linkEmail, ' blank')
 
