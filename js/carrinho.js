@@ -1,40 +1,41 @@
-const botoesBordados = document.querySelectorAll( '.btn-adicionar')
+const botoesBordados = document.querySelectorAll('.btn-adicionar')
 
 // agora vamos criar o carrinho de compras
-let carrinho = JSON.parse(localStorage.getItem( 'itemCarrinho'))
-|| []
+let carrinho = JSON.parse(localStorage.getItem('itemCarrinho'))
+    || []
 
 //funcao para adicionar itens ao carrinho
-botoesBordados.forEach(function(botao) {
-    botao.addEventListener('click', function(){
+botoesBordados.forEach(function (botao) {
+    botao.addEventListener('click', function () {
 
-    //recebe dados do botao
-    const nomeProduto = botao.getAttribute('data-nome')
-    const precoProduto = botao.getAttribute('data-preco')
+        //recebe dados do botao
+        const nomeProduto = botao.getAttribute('data-nome')
+        const precoProduto = botao.getAttribute('data-preco')
 
-    // cira um objeto para o item do carrinhio
-    const itemCarrinho = {
-        nome: nomeProduto,
-        preco:precoProduto
-    }
-    // adicionar o item ao carrinho
-    carrinho.push(itemCarrinho)
+        // cira um objeto para o item do carrinhio
+        const itemCarrinho = {
+            nome: nomeProduto,
+            preco: precoProduto
+        }
+        // adicionar o item ao carrinho
+        carrinho.push(itemCarrinho)
 
-    //salva o carrinho no localstorade
-    localStorage.setItem("itemCarrinho", JSON.stringify(carrinho))
+        //salva o carrinho no localstorade
+        localStorage.setItem("itemCarrinho", JSON.stringify(carrinho))
 
-    // exibe uma mensagem de confirmacao
+        // exibe uma mensagem de confirmacao
 
-    botao.innerText = 'adicionar!'
-    botao.classList.replace('btn-primary','btn-success')
+        botao.innerText = 'adicionar!'
+        botao.classList.replace('btn-primary', 'btn-success')
 
-    // depois de um tempo a mensagem some
-    setTimeout(() => {
-        botao.innerText = 'adicionado!'
-        botao.classList.replace('btn-success','btn-primary')}, 2000)
+        // depois de um tempo a mensagem some
+        setTimeout(() => {
+            botao.innerText = 'adicionado!'
+            botao.classList.replace('btn-success', 'btn-primary')
+        }, 2000)
     })
-    
+
 })
-   
+
 
 

@@ -235,7 +235,8 @@ main {
 h3 {
     color: var(--cor-principal);
 }
-.rodape{
+
+.rodape {
     width: 100vw;
     height: 10vh;
     background-color: var(--cor-principal);
@@ -243,11 +244,12 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;    
+    text-align: center;
 }
+
 .nav-rodape p {
     margin: 0.5vw;
-    
+
 
 }
 
@@ -263,7 +265,7 @@ h3 {
         height: 10vh;
         justify-content: center;
     }
- 
+
     .logo {
         display: none;
     }
@@ -345,6 +347,7 @@ h3 {
     .busca {
         width: 350px;
     }
+
     .catalogo-titulo {
         font-size: 35px;
     }
@@ -359,9 +362,10 @@ h3 {
     .bordados>a>img {
         width: 200px;
     }
-    #texto__rodape{
-     text-align: center;
-    font-size: 15px;
+
+    #texto__rodape {
+        text-align: center;
+        font-size: 15px;
 
     }
 }

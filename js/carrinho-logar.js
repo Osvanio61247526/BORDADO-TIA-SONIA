@@ -1,5 +1,3 @@
-const { Suspense } = require("react")
-
 //vamos verificar se o usuário está logado
 const usuarioLogado = localStorage.getItem('usuarioCadastro')
 
@@ -22,76 +20,75 @@ if (!usuarioLogado) {
     const listaProdutosHTML = document.getElementById('lista-produtos')
     const textoTotal = document.getElementById('texto-total')
     let valorTotal = 0
-    let textoPedidoPronto = ' olá, gostaria de fazer um pedido:\n\n'
+    let textoPedidoProntoEmail = ' olá, gostaria de fazer um pedido:\n\n'
 
     //vamos ferificar se o carrinho está vazio
     if (carrinho.length === 0) {
         listaProdutosHTML.innerHTML =
             '<tr>' +
-              '<td colspan="2" class="text-center"> seu carrinhio está vazio</td>' +
+            '<td colspan="2" class="text-center"> seu carrinhio está vazio</td>' +
             '</tr>'
     } else {
 
         //cada item do carrinho é exibido na tabela
-        carrinho.forEach(function(item){
+        carrinho.forEach(function (item) {
             listaProdutosHTML.innerHTML +=
                 '<tr>' +
-                   '<td>' + item.nome + '</td>'+
-                   '<td>R$' + item.preco + '</td>' +
+                '<td>' + item.nome + '</td>' +
+                '<td>R$' + item.preco + '</td>' +
                 '</tr>'
-        //somar o total
-        valorTotal += parseFloat(item.preco)
-        // colocar os itens no e-mail
-        textoPedidoPronto += '-' + item.nome + ': R$' + item.preco + '\n'
-    })
+            //somar o total
+            valorTotal += parseFloat(item.preco)
+            // colocar os itens no e-mail
+            textoPedidoProntoEmail += '-' + item.nome + ': R$' + item.preco + '\n'
+        })
 
         textoTotal.innerText = 'Total: R$ ' + valorTotal
-        textoPedidoPronto += '\nValor Total: R$ ' + valorTotal
-    
-    //finalizar o pedido por e-meil
-    const btnFinalizar = document.getElementById('btn-finalizar')
-    btnFinalizar.addEventListener('click', function(){
-        Event.preventDefault()
+        textoPedidoProntoEmail += '\nValor Total: R$ ' + valorTotal
 
-        if(carrinho.length === 0){
-            const textOriginal = btnFinalizar.innerText
-            btnFinalizar.innerText = "o carrinho está vazio!"
-            btnFinalizar.classList.replace("btn-success", "btn-danger")
+        //finalizar o pedido por e-meil
+        const btnFinalizar = document.getElementById('btn-finalizar')
+        btnFinalizar.addEventListener('click', function () {
+            event.preventDefault()
 
-            setTimeout(() =>{
-                 btnFinalizar.inneText = textOriginal
-                 btnFinalizar.classList.replace('btn-danger', 'btn-success')
-            },2500)
+            if (carrinho.length === 0) {
+                const textOriginal = btnFinalizar.innerText
+                btnFinalizar.innerText = "o carrinho está vazio!"
+                btnFinalizar.classList.replace("btn-success", "btn-danger")
 
-        
+                setTimeout(() => {
+                    btnFinalizar.inneText = textOriginal
+                    btnFinalizar.classList.replace('btn-danger', 'btn-success')
+                }, 2500)
 
-        return
+
+
+                return
+            }
+            btnFinalizar.innerText = 'preprando pedido...!'
+            btnFinalizar.classList.replace('bnt-success', 'btn-secondary')
+
+            const cliente = JSON.parse(usuarioLogado)
+            textoPedidoProntoEmail += '\n\nDados do cliente:\nNome:' + cliente.nome + '\nE-mail:' + cliente.telefone
+
+            const emailTiasonia = 'osvanio61247526@edu.df.senac.br'
+            const assunto = 'novo pedido de' + SVGLinearGradientElement.nome
+
+            const linkEmail = 'https://mail.google.com/mail/?view=cm&fs=1&to=${emailTiaSonia}&su=${encodeURIComponent(assunto)}&body=${encodeURIComponent(textoPedidoPorEmail)}'
+
+            window.open(linkEmail, ' blank')
+
+            localStorage.removeItem('itemCarrinho')
+
+            setTimeout(() => {
+                window.location.href = 'index.html'
+            }, 1500)
+
+        })
+
     }
-        btnFinalizar.innerText = 'preprando pedido...!'
-         btnFinalizar.classList.replace( 'bnt-success', 'btn-secondary')
 
-         const cliente = JSON.parse( usuarioLogado)
-         textoPedidoProntoEmail += '\n\nDados do cliente:\nNome:' + cliente.nome + '\nE-mail:' + cliente.telefone
 
-         const emailTiasonia = 'osvanio61247526@edu.df.senac.br'
-         const assunto = 'novo pedido de'+ SVGLinearGradientElement.nome
-
-           const linkEmail = 'https://mail.google.com/mail/?
-           view=cm&fs=1&to=${emailTiaSonia}&su=${encodeURIComponent(assunto)}&body=${encodeURIComponent(textoPedidoPorEmail)}'
-
-           window.open(linkGmail,' blank')
-
-           localStorage.removeItem( 'itemCarrinho')
-
-           setTimeout(()=> {
-             window.location.href = 'index.html'
-           }, 1500)
-
-           })
-            
-           }
-
-    
 }
 
 
